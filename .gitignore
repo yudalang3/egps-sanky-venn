@@ -44,3 +44,6 @@ build_jar_and_move.sh
 
 CLAUDE.md
 AGENTS.md
+
+# Local packaged module
+/egps-sanky-venn-*.jar
