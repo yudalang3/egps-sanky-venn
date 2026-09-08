@@ -29,7 +29,7 @@ if [[ -n "$BASE_CLASSES" ]]; then CP_ENTRIES+=("$BASE_CLASSES" "$SHELL_CLASSES")
 shopt -s nullglob
 for jar in "$SCRIPT_DIR"/dependency-egps/*.jar; do
     if [[ -n "$BASE_CLASSES" ]]; then
-        case "${jar##*/}" in egps-base*.jar|egps-shell*.jar|egps-main.gui*.jar) continue ;; esac
+        case "${jar##*/}" in egps-base*.jar|egps-shell*.jar) continue ;; esac
     fi
     CP_ENTRIES+=("$jar")
 done
